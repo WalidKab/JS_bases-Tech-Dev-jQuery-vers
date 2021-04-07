@@ -21,11 +21,6 @@ $(".img-responsive").eq(i).on("mouseover", function(){
 });
 }
 
-$('.panel').mouseover(function() {
-    console.log("L'utilisateur regarde " + $(this)[0].lastElementChild.textContent)
-});
-
-
 $('.form-control').focus(function() {
     console.log("L'utilisateur écrit dans l'input")
 });
