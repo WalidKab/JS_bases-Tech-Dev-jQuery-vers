@@ -7,12 +7,36 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
     <script type="text/javascript" src="DATA.js"></script>
-    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="path_to/jquery.js"></script>
+    <script type="text/javascript" src="path_to/jquery.simplePagination.js"></script>
 </head>
 
 <body>
     <div class="container">
-    </div>
+        
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Nom</th>
+                <th scope="col">Prénom</th>
+                <th scope="col">Email</th>
+                <th scope="col">Téléphone</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+          <div>
+            <button class="btn" onclick="firstPage()">|<</button>
+                <button class="btn" onclick="previous()">
+                  <</button>
+                    <span id="pageInfo"></span>
+                    <button class="btn" onclick="nextPage()">></button>
+                    <button class="btn" onclick="lastPage()">>|</button>
+          </div>
+        </div>
+        <script src="script.js"></script>
 </body>
 
 </html>
